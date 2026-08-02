@@ -28,6 +28,18 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/events" element={<Events />} />
+
+        <Route path="/resources/housing-assistance" element={<Housing />} />
+        <Route path="/resources/food-assistance" element={<Food />} />
+        <Route path="/resources/mental-health" element={<MentalHealth />} />
+        <Route path="/resources/healthcare" element={<Healthcare />} />
+        <Route path="/resources/education" element={<Education />} />
+        <Route path="/resources/employment" element={<Employment />} />
+        <Route path="/resources/family-support" element={<FamilySupport />} />
+        <Route
+          path="/resources/community-programs"
+          element={<CommunityPrograms />}
+        />
       </Routes>
 
       <Footer />

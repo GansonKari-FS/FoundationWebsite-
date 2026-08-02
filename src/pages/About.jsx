@@ -1,5 +1,15 @@
 import "./About.css";
 import PageHeader from "../components/layout/PageHeader";
+import smile from "../assets/images/antonie-smile.jpg";
+
+import Housing from "./pages/resources/Housing";
+import Food from "./pages/resources/Food";
+import MentalHealth from "./pages/resources/MentalHealth";
+import Healthcare from "./pages/resources/Healthcare";
+import Education from "./pages/resources/Education";
+import Employment from "./pages/resources/Employment";
+import FamilySupport from "./pages/resources/FamilySupport";
+import CommunityPrograms from "./pages/resources/CommunityPrograms";
 
 function About() {
   return (

@@ -1,3 +1,5 @@
+import photo from "../assets/images/antonie-smile.jpg";
+
 function Home() {
   return (
     <div className="container" style={{ padding: "4rem 0" }}>

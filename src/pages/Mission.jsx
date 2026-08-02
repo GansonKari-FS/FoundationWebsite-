@@ -1,5 +1,5 @@
 import "./Mission.css";
-import missionPhoto from "../assets/images/antoine-smile.jpg";
+import missionPhoto from "../assets/images/antonie-smile.jpg";
 
 function Mission() {
   return (
