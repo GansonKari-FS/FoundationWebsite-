@@ -1,0 +1,177 @@
+.memory-page {
+  background: #f8f9fc;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.memory-hero {
+  background: linear-gradient(135deg, #2149b3, #5f7ed6);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.memory-hero .section-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.portrait {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  margin: 0 auto 30px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.memory-hero h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 750px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* ==========================
+   STORY
+========================== */
+
+.memory-story {
+  padding: 100px 20px;
+}
+
+.memory-story .container {
+  max-width: 900px;
+}
+
+.memory-story h2 {
+  text-align: center;
+  color: #2149b3;
+  margin-bottom: 35px;
+}
+
+.memory-story p {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ==========================
+   LEGACY CARDS
+========================== */
+
+.legacy-grid .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.legacy-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  font-size: 2rem;
+}
+
+.legacy-card:hover {
+  transform: translateY(-8px);
+}
+
+.legacy-card h3 {
+  margin: 20px 0 15px;
+  color: #2149b3;
+  font-size: 1.4rem;
+}
+
+.legacy-card p {
+  color: #666;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery {
+  padding: 100px 20px;
+  background: white;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2149b3;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px) {
+  .legacy-grid .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .legacy-grid .container {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 200px;
+    height: 200px;
+  }
+
+  .memory-story p {
+    text-align: left;
+  }
+}

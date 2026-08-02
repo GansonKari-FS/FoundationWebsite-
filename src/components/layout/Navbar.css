@@ -8,18 +8,18 @@
 }
 
 .nav-container {
-  max-width: 1300px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 30px;
+  padding: 0 40px;
 }
 
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   text-decoration: none;
 }
 
@@ -31,7 +31,7 @@
 
 .logo-text h2 {
   color: #2149b3;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin: 0;
 }
@@ -81,10 +81,12 @@
   text-decoration: none;
   background: #2149b3;
   color: white;
-  padding: 14px 28px;
+  padding: 12px 22px;
   border-radius: 50px;
   font-weight: 700;
   transition: 0.3s;
+  font-size: 0.95rem;
+  min-width: 120px;
 }
 
 .help-button:hover {

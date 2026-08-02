@@ -1,95 +1,65 @@
+import "./About.css";
+
 function About() {
   return (
-    <main className="container" style={{ padding: "80px 20px" }}>
-      <section
-        className="two-column"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "60px",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <img
-            src="/family-photo.jpg"
-            alt="Antoine Dwayne Wattz Foundation"
-            style={{
-              width: "100%",
-              borderRadius: "20px",
-              boxShadow: "0 20px 40px rgba(0,0,0,.15)",
-            }}
-          />
+    <main className="about-page">
+      {/* Hero */}
+      <section className="about-hero">
+        <div className="container">
+          <span className="section-tag">ABOUT THE FOUNDATION</span>
+
+          <h1>Continuing Antoine's Legacy</h1>
+
+          <p>
+            The Antoine Dwayne Wattz Foundation exists to continue Antoine's
+            dream of serving others through faith, compassion, mentorship, and
+            community outreach.
+          </p>
         </div>
+      </section>
 
-        <div>
-          <span className="section-tag">OUR STORY</span>
+      {/* Story */}
+      <section className="story-section">
+        <div className="container">
+          <img
+            src="/antoine-allKids.jpg"
+            alt="Antoine Dwayne Wattz with his daughters"
+            className="story-photo"
+          />
 
-          <h1
-            style={{
-              fontSize: "3rem",
-              margin: "20px 0",
-              color: "#1f2937",
-            }}
-          >
-            Honoring Antoine's Legacy
-          </h1>
+          <div className="story-content">
+            <span className="section-tag">OUR STORY</span>
 
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.9",
-              color: "#555",
-              marginBottom: "24px",
-            }}
-          >
-            Antoine Dwayne Wattz was a devoted husband, loving father, man of
-            God, mentor, and servant to his community. Although he faced many
-            hardships throughout his life—including time in foster care,
-            juvenile detention, and prison—he transformed his experiences into
-            opportunities to encourage and guide others.
-          </p>
+            <h2>A Legacy Built on Love, Faith & Service</h2>
 
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.9",
-              color: "#555",
-              marginBottom: "24px",
-            }}
-          >
-            While incarcerated, Antoine became a mentor to those around him.
-            After his release, he continued dedicating his life to helping
-            others, offering hope, wisdom, and encouragement to anyone in need.
-          </p>
+            <p>
+              Antoine Dwayne Wattz was more than the inspiration behind this
+              foundation. He was a devoted husband, a loving father, a mentor,
+              and a man whose faith shaped the way he lived every day.
+            </p>
 
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.9",
-              color: "#555",
-              marginBottom: "24px",
-            }}
-          >
-            The Antoine Dwayne Wattz Foundation was established to continue his
-            dream of serving individuals and families regardless of race,
-            religion, economic status, or background. Through compassion,
-            outreach, education, and community support, the foundation strives
-            to keep Antoine's legacy alive for generations to come.
-          </p>
+            <p>
+              Antoine experienced unimaginable hardships throughout his life.
+              After losing his mother at only nine years old, he and his
+              siblings spent much of their childhood in foster care. As he grew
+              older, difficult circumstances led him through juvenile detention
+              centers and prison.
+            </p>
 
-          <blockquote
-            style={{
-              borderLeft: "5px solid #1d4ed8",
-              paddingLeft: "20px",
-              fontStyle: "italic",
-              fontSize: "1.15rem",
-              color: "#1f2937",
-              marginTop: "30px",
-            }}
-          >
-            "Helping others wasn't something Antoine did—it was who he was."
-          </blockquote>
+            <p>
+              Yet Antoine refused to let his past define him. While
+              incarcerated, he became a mentor to other inmates, encouraging
+              them to pursue hope, faith, and positive change. After his
+              release, he continued mentoring others and dedicated himself to
+              helping people who simply needed someone to believe in them.
+            </p>
+
+            <p>
+              Today, the Antoine Dwayne Wattz Foundation carries that same
+              mission forward by providing hope, encouragement, and support to
+              individuals and families throughout our community.
+            </p>
+          </div>
         </div>
       </section>
     </main>
