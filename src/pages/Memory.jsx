@@ -2,7 +2,7 @@ import "./Memory.css";
 
 import portrait from "../assets/images/antoine-portrait.jpg";
 import smile from "../assets/images/antoine-smile.jpg";
-import family from "../assets/images/antoine-allKids.jpg";
+import family from "../assets/images/antonie-allKids.jpg";
 
 function Memory() {
   return (

@@ -1,9 +1,14 @@
 import "./About.css";
+import PageHeader from "../components/layout/PageHeader";
 
 function About() {
   return (
     <main className="about-page">
       {/* Hero */}
+      <PageHeader
+        title="Continuing Antoine's Legacy"
+        subtitle="Learn more about the foundation and its mission to serve others."
+      />
       <section className="about-hero">
         <div className="container">
           <span className="section-tag">ABOUT THE FOUNDATION</span>
