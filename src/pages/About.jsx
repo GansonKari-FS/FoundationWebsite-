@@ -1,15 +1,8 @@
 import "./About.css";
 import PageHeader from "../components/layout/PageHeader";
-import smile from "../assets/images/antonie-smile.jpg";
 
-import Housing from "./pages/resources/Housing";
-import Food from "./pages/resources/Food";
-import MentalHealth from "./pages/resources/MentalHealth";
-import Healthcare from "./pages/resources/Healthcare";
-import Education from "./pages/resources/Education";
-import Employment from "./pages/resources/Employment";
-import FamilySupport from "./pages/resources/FamilySupport";
-import CommunityPrograms from "./pages/resources/CommunityPrograms";
+import smile from "../assets/images/antonie-smile.jpg";
+import family from "../assets/images/antonie-allKids.jpg";
 
 function About() {
   return (
@@ -19,6 +12,7 @@ function About() {
         title="Continuing Antoine's Legacy"
         subtitle="Learn more about the foundation and its mission to serve others."
       />
+
       <section className="about-hero">
         <div className="container">
           <span className="section-tag">ABOUT THE FOUNDATION</span>
@@ -26,7 +20,7 @@ function About() {
           <h1>Continuing Antoine's Legacy</h1>
 
           <p>
-            The Antoine Dwayne Wattz Foundation exists to continue Antoine's
+            The Antonie Dwayne Wattz Foundation exists to continue Antonie's
             dream of serving others through faith, compassion, mentorship, and
             community outreach.
           </p>
@@ -37,8 +31,8 @@ function About() {
       <section className="story-section">
         <div className="container">
           <img
-            src="/antoine-allKids.jpg"
-            alt="Antoine Dwayne Wattz with his daughters"
+            src={family}
+            alt="Antonie Dwayne Wattz with his family"
             className="story-photo"
           />
 
@@ -48,13 +42,13 @@ function About() {
             <h2>A Legacy Built on Love, Faith & Service</h2>
 
             <p>
-              Antoine Dwayne Wattz was more than the inspiration behind this
-              foundation. He was a devoted husband, a loving father, a mentor,
-              and a man whose faith shaped the way he lived every day.
+              Antonie Dwayne Wattz was more than the inspiration behind this
+              foundation. He was a devoted husband, loving father, mentor, and a
+              man whose faith shaped every part of his life.
             </p>
 
             <p>
-              Antoine experienced unimaginable hardships throughout his life.
+              Antonie experienced unimaginable hardships throughout his life.
               After losing his mother at only nine years old, he and his
               siblings spent much of their childhood in foster care. As he grew
               older, difficult circumstances led him through juvenile detention
@@ -62,7 +56,7 @@ function About() {
             </p>
 
             <p>
-              Yet Antoine refused to let his past define him. While
+              Yet Antonie refused to let his past define him. While
               incarcerated, he became a mentor to other inmates, encouraging
               them to pursue hope, faith, and positive change. After his
               release, he continued mentoring others and dedicated himself to
@@ -70,9 +64,38 @@ function About() {
             </p>
 
             <p>
-              Today, the Antoine Dwayne Wattz Foundation carries that same
-              mission forward by providing hope, encouragement, and support to
-              individuals and families throughout our community.
+              Today, the Antonie Dwayne Wattz Foundation carries that same
+              mission forward by providing hope, encouragement, mentorship, and
+              support to individuals and families throughout our community.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="about-mission">
+        <div className="container">
+          <div className="mission-image">
+            <img src={smile} alt="Antonie smiling" />
+          </div>
+
+          <div className="mission-content">
+            <span className="section-tag">OUR MISSION</span>
+
+            <h2>Serving With Faith, Compassion & Hope</h2>
+
+            <p>
+              We believe that everyone deserves encouragement, support, and an
+              opportunity to build a brighter future. Through outreach,
+              mentorship, resource referrals, and community partnerships, we
+              strive to make a lasting impact throughout St. Landry Parish and
+              beyond.
+            </p>
+
+            <p>
+              Every program, event, and volunteer effort is dedicated to
+              honoring Antonie's legacy of loving others, serving selflessly,
+              and inspiring hope in every life we touch.
             </p>
           </div>
         </div>

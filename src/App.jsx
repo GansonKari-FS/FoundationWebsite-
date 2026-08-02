@@ -6,10 +6,21 @@ import Mission from "./pages/Mission";
 import Memory from "./pages/Memory";
 import Assistance from "./pages/Assistance";
 import Board from "./pages/Board";
-import Resources from "./pages/Resources";
+import Resources from "./pages/Resource";
 import Donate from "./pages/Donate";
 import Events from "./pages/Events";
 
+// Resource Pages
+import Housing from "./pages/resources/Housing";
+import Food from "./pages/resources/Food";
+import MentalHealth from "./pages/resources/MentalHealth";
+import Healthcare from "./pages/resources/Healthcare";
+import Education from "./pages/resources/Education";
+import Employment from "./pages/resources/Employment";
+import FamilySupport from "./pages/resources/FamilySupport";
+import CommunityPrograms from "./pages/resources/CommunityPrograms";
+
+// Layout
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
@@ -19,6 +30,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/mission" element={<Mission />} />
@@ -29,6 +41,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/events" element={<Events />} />
 
+        {/* Resource Pages */}
         <Route path="/resources/housing-assistance" element={<Housing />} />
         <Route path="/resources/food-assistance" element={<Food />} />
         <Route path="/resources/mental-health" element={<MentalHealth />} />
