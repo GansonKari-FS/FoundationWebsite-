@@ -1,6 +1,38 @@
-@import "./styles/theme.css";
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
 
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root {
+  --primary: #2149b3;
+  --primary-dark: #17357f;
+  --accent: #d8b24a;
+
+  --white: #ffffff;
+  --light: #f8fafc;
+  --gray-light: #f3f4f6;
+  --gray: #6b7280;
+  --dark: #1f2937;
+
+  --radius: 20px;
+
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  --container: 1400px;
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,32 +43,245 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background: var(--background);
-  color: var(--text);
-  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.2;
 }
+
+/* NOTICE: No global color here */
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--gray);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-ul {
-  list-style: none;
+/* ==========================================
+   IMAGES
+========================================== */
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
-button {
-  cursor: pointer;
-  border: none;
-}
+/* ==========================================
+   LAYOUT
+========================================== */
 
 .container {
-  width: min(1200px, 90%);
+  width: min(var(--container), 92%);
   margin: auto;
+}
+
+section {
+  padding: 110px 0;
+}
+
+/* ==========================================
+   SECTION TAG
+========================================== */
+
+.section-tag {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.primary-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 16px 34px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.secondary-btn {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 34px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: var(--primary);
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 40px;
+  box-shadow: var(--shadow);
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   GRID HELPERS
+========================================== */
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.four-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ==========================================
+   UTILITIES
+========================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+.bg-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.bg-primary p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4 {
+  color: white;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+  .two-column,
+  .three-column,
+  .four-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 12px;
+  color: #555;
 }

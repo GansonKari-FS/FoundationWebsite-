@@ -1,0 +1,28 @@
+.impact {
+  padding: 90px 0;
+  background: #173b8c;
+  color: white;
+  text-align: center;
+}
+
+.impact h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.impact-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.impact-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
