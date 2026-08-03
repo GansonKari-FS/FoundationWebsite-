@@ -1,4 +1,4 @@
-import "./Resources.css";
+import "./ResourcePage.css";
 import { Link } from "react-router-dom";
 
 function Resources() {
