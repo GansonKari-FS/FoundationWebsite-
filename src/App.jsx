@@ -1,103 +1,64 @@
-import "./About.css";
-import PageHeader from "../components/layout/PageHeader";
+import { Routes, Route } from "react-router-dom";
 
-import smile from "../assets/images/antoine-smile.jpg";
-import family from "../assets/images/antoine-allKids.jpg";
+// Layout
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
-function About() {
+// Main Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Mission from "./pages/Mission";
+import Memory from "./pages/Memory";
+import Assistance from "./pages/Assistance";
+import Board from "./pages/Board";
+import ResourcePage from "./pages/ResourcePage";
+import Donate from "./pages/Donate";
+import Events from "./pages/Events";
+
+// Resource Pages
+import Housing from "./pages/resources/Housing";
+import Food from "./pages/resources/Food";
+import MentalHealth from "./pages/resources/MentalHealth";
+import Healthcare from "./pages/resources/Healthcare";
+import Education from "./pages/resources/Education";
+import Employment from "./pages/resources/Employment";
+import FamilySupport from "./pages/resources/FamilySupport";
+import CommunityPrograms from "./pages/resources/CommunityPrograms";
+
+function App() {
   return (
-    <main className="about-page">
-      <PageHeader
-        title="Continuing Antoine's Legacy"
-        subtitle="Learn more about the foundation and the story behind our mission."
-      />
+    <>
+      <Navbar />
 
-      {/* Hero */}
-      <section className="about-hero">
-        <div className="container">
-          <span className="section-tag">ABOUT THE FOUNDATION</span>
+      <Routes>
+        {/* Main Pages */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/memory" element={<Memory />} />
+        <Route path="/assistance" element={<Assistance />} />
+        <Route path="/board" element={<Board />} />
+        <Route path="/resources" element={<ResourcePage />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/events" element={<Events />} />
 
-          <h1>Continuing Antoine's Legacy</h1>
+        {/* Resource Pages */}
+        <Route path="/resources/housing-assistance" element={<Housing />} />
+        <Route path="/resources/food-assistance" element={<Food />} />
+        <Route path="/resources/mental-health" element={<MentalHealth />} />
+        <Route path="/resources/healthcare" element={<Healthcare />} />
+        <Route path="/resources/education" element={<Education />} />
+        <Route path="/resources/employment" element={<Employment />} />
+        <Route path="/resources/family-support" element={<FamilySupport />} />
+        <Route
+          path="/resources/community-programs"
+          element={<CommunityPrograms />}
+        />
+      </Routes>
 
-          <p>
-            The Antoine Dwayne Wattz Foundation exists to honor Antoine's life
-            by serving others through faith, compassion, mentorship, and
-            community outreach. Our mission is to provide hope and connect
-            families with the resources they need to build stronger futures.
-          </p>
-
-          <img
-            src={smile}
-            alt="Antoine Dwayne Wattz smiling"
-            className="hero-image"
-          />
-        </div>
-      </section>
-
-      {/* Story */}
-      <section className="story-section">
-        <div className="container story-grid">
-          <div className="story-image">
-            <img
-              src={family}
-              alt="Antoine Dwayne Wattz with family"
-              className="story-photo"
-            />
-          </div>
-
-          <div className="story-content">
-            <span className="section-tag">OUR STORY</span>
-
-            <h2>A Legacy Built on Love, Faith & Service</h2>
-
-            <p>
-              Antoine Dwayne Wattz believed in lifting others up regardless of
-              their circumstances. His compassion, leadership, and unwavering
-              faith inspired those around him and continue to guide this
-              foundation today.
-            </p>
-
-            <p>
-              Throughout his life, Antoine dedicated himself to mentoring
-              others, strengthening families, and encouraging people to never
-              give up on themselves. His legacy continues through programs that
-              serve individuals and families across Louisiana.
-            </p>
-
-            <p>
-              The Antoine Dwayne Wattz Foundation was established to continue
-              that mission by connecting people with housing assistance, food
-              resources, healthcare, education, employment opportunities, family
-              support, and community programs.
-            </p>
-
-            <p>
-              We believe that every person deserves hope, dignity, and the
-              opportunity to succeed. Through partnerships with local
-              organizations and community leaders, we strive to make a lasting
-              difference one family at a time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission */}
-      <section className="mission-section">
-        <div className="container">
-          <span className="section-tag">OUR PURPOSE</span>
-
-          <h2>Serving Louisiana Families</h2>
-
-          <p>
-            The Antoine Dwayne Wattz Foundation works to connect individuals and
-            families with valuable community resources, promote educational
-            opportunities, encourage healthy living, and inspire positive change
-            through service, faith, and compassion.
-          </p>
-        </div>
-      </section>
-    </main>
+      <Footer />
+    </>
   );
 }
 
-export default About;
+export default App;
