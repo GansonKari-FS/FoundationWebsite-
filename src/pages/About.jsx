@@ -1,7 +1,8 @@
 import "./About.css";
 import PageHeader from "../components/layout/PageHeader";
-import smile from "../assets/images/antoine-smile.jpg";
-import family from "../assets/images/antoine-allKids.jpg";
+
+import smile from "../assets/images/antonie-smile.jpg";
+import family from "../assets/images/antonie-allKids.jpg";
 
 function About() {
   return (
@@ -34,13 +35,13 @@ function About() {
         </div>
       </section>
 
-      {/* Story */}
+      {/* Story Section */}
       <section className="story-section">
         <div className="container story-grid">
           <div className="story-image">
             <img
               src={family}
-              alt="Antoine Dwayne Wattz with family"
+              alt="Antoine Dwayne Wattz with his family"
               className="story-photo"
             />
           </div>
@@ -48,7 +49,7 @@ function About() {
           <div className="story-content">
             <span className="section-tag">OUR STORY</span>
 
-            <h2>A Legacy Built on Love, Faith, and Service</h2>
+            <h2>A Legacy Built on Love, Faith & Service</h2>
 
             <p>
               Antoine Dwayne Wattz believed that every person deserved hope,
@@ -82,7 +83,7 @@ function About() {
         </div>
       </section>
 
-      {/* Mission Statement */}
+      {/* Purpose Section */}
       <section className="mission-section">
         <div className="container">
           <span className="section-tag">OUR PURPOSE</span>
