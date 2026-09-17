@@ -134,7 +134,7 @@ function ResourcePage({ title, description, resources }) {
           <h1>Helping You Find Support</h1>
 
           <p>
-            The Antoine Dwayne Wattz Foundation believes no one should face
+            The Antoine Dwayne Watts Foundation believes no one should face
             life's challenges alone. Explore resources available to individuals
             and families in St. Landry Parish and surrounding communities.
           </p>
@@ -167,7 +167,7 @@ function ResourcePage({ title, description, resources }) {
 
           <p>
             If you are unable to find the resource you're looking for, please
-            contact the Antoine Dwayne Wattz Foundation. We're continually
+            contact the Antoine Dwayne Watts Foundation. We're continually
             building partnerships to better serve our community.
           </p>
 

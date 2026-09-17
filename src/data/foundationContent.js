@@ -1,16 +1,16 @@
 const foundationContent = {
-  foundationName: "Antonie Dwayne Wattz Foundation",
+  foundationName: "Antonie Dwayne Watts Foundation",
 
   slogan: "Honoring a Legacy. Serving Our Community.",
 
   mission:
-    "To help those in need regardless of race, religion, economic status, or background while honoring the legacy of Antonie Dwayne Wattz through faith, compassion, mentorship, and service.",
+    "To help those in need regardless of race, religion, economic status, or background while honoring the legacy of Antonie Dwayne Watts through faith, compassion, mentorship, and service.",
 
   vision:
     "To build stronger communities by providing hope, compassion, resources, and opportunities that empower individuals and families to overcome life's challenges.",
 
   story: `
-The Antonie Dwayne Wattz Foundation was established to continue Antoine's
+The Antonie Dwayne Watts Foundation was established to continue Antoine's
 dream of helping others. Inspired by his faith, compassion, and dedication
 to mentoring those around him, our foundation serves individuals and families
 through outreach, support, and community partnerships.
@@ -21,7 +21,7 @@ touch, we continue Antoine's legacy.
 `,
 
   biography: `
-Antonie Dwayne Wattz was a devoted man of God, a loving husband, father,
+Antonie Dwayne Watts was a devoted man of God, a loving husband, father,
 mentor, and friend whose life continues to inspire this foundation.
 
 Throughout his childhood, Antoine and his siblings spent much of their lives
@@ -38,11 +38,11 @@ sharing his faith, and demonstrating that no person's past determines their
 future.
 
 His compassion, faith, and unwavering commitment to helping people continue
-today through the Antonie Dwayne Wattz Foundation.
+today through the Antonie Dwayne Watts Foundation.
 `,
 
   founderMessage: `
-The Antonie Dwayne Wattz Foundation was created to keep Antoine's name,
+The Antonie Dwayne Watts Foundation was created to keep Antoine's name,
 his faith, and his dream of helping others alive. Through this foundation,
 we are committed to continuing his legacy by serving our community with
 love, hope, and compassion.
@@ -60,7 +60,7 @@ love, hope, and compassion.
   quote:
     "Every life deserves hope, compassion, and the opportunity to build a better future.",
 
-  legacyHeading: "The Legacy of Antonie Dwayne Wattz",
+  legacyHeading: "The Legacy of Antonie Dwayne Watts",
 };
 
 export default foundationContent;

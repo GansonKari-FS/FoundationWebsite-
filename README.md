@@ -1,12 +1,12 @@
-# Antonie Dwayne Wattz Foundation Website
+# Antonie Dwayne Watts Foundation Website
 
-A modern, responsive website built for the **Antonie Dwayne Wattz Foundation**, a nonprofit organization dedicated to serving individuals and families through faith, compassion, mentorship, and community outreach.
+A modern, responsive website built for the **Antonie Dwayne Watts Foundation**, a nonprofit organization dedicated to serving individuals and families through faith, compassion, mentorship, and community outreach.
 
 ---
 
 ## Mission
 
-The Antonie Dwayne Wattz Foundation exists to honor Antoine's legacy by helping those in need regardless of race, religion, economic status, or background.
+The Antonie Dwayne Watts Foundation exists to honor Antoine's legacy by helping those in need regardless of race, religion, economic status, or background.
 
 ---
 
@@ -114,4 +114,4 @@ src
 
 Kari Ganson
 
-Website developed for the Antonie Dwayne Wattz Foundation.
+Website developed for the Antonie Dwayne Watts Foundation.

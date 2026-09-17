@@ -11,7 +11,7 @@ function CommunityPrograms() {
           description: "Volunteer and community support programs.",
         },
         {
-          name: "Antoine Dwayne Wattz Foundation",
+          name: "Antoine Dwayne Watts Foundation",
           description: "Community outreach, mentoring, and family support.",
         },
       ]}
