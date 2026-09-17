@@ -24,23 +24,18 @@ function Navbar() {
             <li>
               <Link to="/">Home</Link>
             </li>
-
             <li>
               <Link to="/about">About</Link>
             </li>
-
             <li>
               <Link to="/mission">Mission</Link>
             </li>
-
             <li>
               <Link to="/memory">In Memory</Link>
             </li>
-
             <li>
               <Link to="/board">Board</Link>
             </li>
-
             <li>
               <Link to="/resources">Resources</Link>
             </li>

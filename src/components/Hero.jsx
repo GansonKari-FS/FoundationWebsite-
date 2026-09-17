@@ -1,41 +1,37 @@
-import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage: "url('/images/antoine-smile.jpg')",
-      }}
-    >
+    <section className="hero">
       <div className="hero-overlay"></div>
 
-      <div className="hero-content">
+      <div className="container hero-content">
         <span className="hero-tag">
-          Honoring the Legacy of Antoine Dwayne Wattz
+          HONORING THE LEGACY OF ANTOINE DWAYNE WATTS
         </span>
 
         <h1>
           Honoring a Legacy.
           <br />
-          Serving Our Community.
+          Serving Our
+          <br />
+          Community.
         </h1>
 
         <p>
-          The Antonie Dwayne Wattz Foundation is dedicated to continuing
+          The Antoine Dwayne Watts Foundation is dedicated to continuing
           Antoine's legacy of compassion, mentorship, and service by providing
           hope, resources, and support to individuals and families in need.
         </p>
 
         <div className="hero-buttons">
-          <Link to="/assistance" className="primary-btn">
+          <a href="/assistance" className="primary-btn">
             Request Assistance
-          </Link>
+          </a>
 
-          <Link to="/about" className="secondary-btn">
+          <a href="/about" className="secondary-btn">
             Learn Our Story
-          </Link>
+          </a>
         </div>
       </div>
     </section>

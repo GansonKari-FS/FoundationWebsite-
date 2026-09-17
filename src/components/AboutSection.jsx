@@ -1,33 +1,18 @@
 function AboutSection() {
   return (
-    <section className="container" style={{ padding: "100px 20px" }}>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "50px",
-          alignItems: "center",
-        }}
-      >
-        <img
-          src="/family-photo.jpg"
-          alt="Antoine Dwayne Wattz Foundation"
-          style={{
-            width: "100%",
-            borderRadius: "20px",
-            boxShadow: "0 20px 40px rgba(0,0,0,.15)",
-          }}
-        />
+    <section className="about-section">
+      <div className="container about-grid">
+        <div className="about-image">
+          <img src={family} alt="Antoine Dwayne Watts Foundation" />
+        </div>
 
-        <div>
-          <span className="section-tag">WHO WE ARE</span>
-
+        <div className="about-content">
           <h2>Honoring a Legacy of Faith, Hope, and Service</h2>
 
           <p>
-            The Antoine Dwayne Wattz Foundation was created to continue
+            The Antoine Dwayne Watts Foundation was created to continue
             Antoine's mission of helping individuals and families in need
-            regardless of race, religion, or background.
+            through compassion, faith, mentorship, and community service.
           </p>
 
           <p>
