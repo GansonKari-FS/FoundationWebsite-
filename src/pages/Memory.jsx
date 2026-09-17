@@ -13,14 +13,14 @@ function Memory() {
         <div className="container">
           <span className="section-tag">ANTOINE'S LEGACY</span>
 
-          <img src={portrait} alt="Antoine Dwayne Wattz" className="portrait" />
+          <img src={portrait} alt="Antoine Dwayne Watts" className="portrait" />
 
-          <h1>Antoine Dwayne Wattz</h1>
+          <h1>Antoine Dwayne Watts</h1>
 
           <p className="hero-text">
             A devoted husband, loving father, mentor, man of God, and friend
             whose life continues to inspire faith, compassion, and service
-            through the Antonie Dwayne Wattz Foundation.
+            through the Antonie Dwayne Watts Foundation.
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ function Memory() {
           <h2>A Life That Continues to Inspire</h2>
 
           <p>
-            Antoine Dwayne Wattz was a devoted husband, loving father, mentor,
+            Antoine Dwayne Watts was a devoted husband, loving father, mentor,
             and man of God whose life continues to inspire everyone who knew
             him. Although he experienced tremendous hardships throughout his
             life, he chose faith, compassion, and service over bitterness.
@@ -56,7 +56,7 @@ function Memory() {
           </p>
 
           <p>
-            Today, the Antonie Dwayne Wattz Foundation continues his dream by
+            Today, the Antonie Dwayne Watts Foundation continues his dream by
             serving individuals and families through compassion, mentorship,
             faith, and community outreach.
           </p>
@@ -120,7 +120,7 @@ function Memory() {
                 <h3>His Legacy</h3>
 
                 <p>
-                  Today, the Antonie Dwayne Wattz Foundation proudly carries
+                  Today, the Antonie Dwayne Watts Foundation proudly carries
                   Antoine's dream forward by helping those in need throughout
                   our community.
                 </p>

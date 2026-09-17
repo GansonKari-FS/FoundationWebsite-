@@ -8,7 +8,7 @@ function LegacySection() {
         <div className="legacy-image">
           <img
             src="/family-photo.jpg"
-            alt="Antoine Dwayne Wattz with his family"
+            alt="Antoine Dwayne Watts with his family"
           />
         </div>
 
@@ -18,14 +18,14 @@ function LegacySection() {
           <h2>A Life That Continues to Inspire</h2>
 
           <p>
-            Antoine Dwayne Wattz believed everyone deserved compassion,
+            Antoine Dwayne Watts believed everyone deserved compassion,
             encouragement, and a second chance. Throughout his life, he became a
             mentor, a devoted husband, a loving father, and a man of faith
             committed to helping others overcome life's challenges.
           </p>
 
           <p>
-            Today, the Antoine Dwayne Wattz Foundation honors his memory by
+            Today, the Antoine Dwayne Watts Foundation honors his memory by
             continuing the work he cared deeply about—serving individuals,
             strengthening families, and bringing hope to communities in need.
           </p>
