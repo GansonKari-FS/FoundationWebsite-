@@ -1,204 +1,449 @@
+/* =========================================
+   RESOURCE PAGE
+   Antoine Dwayne Watts Foundation
+========================================= */
+
 .resources-page {
-  background: #f8f9fc;
+  background: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
 }
 
-/* HERO */
+/* =========================================
+   RESOURCE HERO
+========================================= */
 
 .resources-hero {
-  background: linear-gradient(135deg, #2149b3, #4f74dc);
+  background: linear-gradient(135deg, #2149b3, #5277d9);
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 90px 20px;
+}
+
+.resources-hero .container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .resources-hero .section-tag {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  background: rgba(255, 255, 255, 0.16);
   padding: 10px 22px;
   border-radius: 999px;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 25px;
 }
 
 .resources-hero h1 {
   color: white;
-  margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  margin: 0 0 22px;
 }
 
 .resources-hero p {
+  color: rgba(255, 255, 255, 0.95);
   max-width: 760px;
-  margin: auto;
+  margin: 0 auto;
   line-height: 1.8;
   font-size: 1.15rem;
 }
 
-/* RESOURCES */
+/* =========================================
+   MAIN RESOURCE SECTION
+========================================= */
 
 .resources-section {
-  padding: 100px 20px;
+  padding: 90px 20px;
+  background: #f7f9fc;
 }
+
+.resources-section .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   RESOURCE CATEGORY GRID
+========================================= */
 
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 28px;
 }
+
+/* =========================================
+   RESOURCE CATEGORY CARDS
+========================================= */
 
 .resource-card {
   background: white;
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: 45px 28px 35px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
+
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .resource-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
 }
 
+/* =========================================
+   RESOURCE ICONS
+========================================= */
+
 .resource-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  line-height: 1;
 }
+
+/* =========================================
+   RESOURCE CARD TITLES
+========================================= */
 
 .resource-card h3 {
   color: #2149b3;
-  margin-bottom: 15px;
+  font-size: 1.55rem;
+  margin: 0 0 15px;
+  line-height: 1.3;
 }
+
+/* =========================================
+   RESOURCE CARD TEXT
+========================================= */
 
 .resource-card p {
-  color: #666;
+  color: #5e6572;
   line-height: 1.7;
-  margin-bottom: 25px;
+  font-size: 1rem;
+  margin: 0 0 25px;
 }
 
+/* =========================================
+   RESOURCE BUTTONS
+========================================= */
+
 .resource-button {
+  display: inline-block;
+
   background: #2149b3;
   color: white;
-  border: none;
-  padding: 12px 28px;
+
+  text-decoration: none;
+
+  padding: 13px 28px;
+
   border-radius: 999px;
-  cursor: pointer;
+
+  font-size: 0.95rem;
   font-weight: 700;
-  transition: 0.3s;
+
+  margin-top: auto;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .resource-button:hover {
-  background: #16388d;
+  background: #17398f;
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(33, 73, 179, 0.25);
 }
 
-/* FOOTER */
+/* =========================================
+   INDIVIDUAL RESOURCE PAGES
+========================================= */
+
+.resource-detail-list {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 25px;
+}
+
+/* =========================================
+   INDIVIDUAL RESOURCE CARDS
+========================================= */
+
+.resource-detail-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  border-left: 5px solid #2149b3;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resource-detail-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   INDIVIDUAL RESOURCE TITLES
+========================================= */
+
+.resource-detail-card h2 {
+  color: #2149b3;
+
+  margin: 0 0 15px;
+
+  font-size: 1.55rem;
+}
+
+/* =========================================
+   INDIVIDUAL RESOURCE TEXT
+========================================= */
+
+.resource-detail-card p {
+  color: #555;
+
+  line-height: 1.8;
+
+  margin: 0 0 12px;
+
+  font-size: 1rem;
+}
+
+.resource-detail-card strong {
+  color: #263246;
+}
+
+/* =========================================
+   PHONE + TEXT LINKS
+========================================= */
+
+.resource-detail-card a {
+  color: #2149b3;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.resource-detail-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   VISIT WEBSITE BUTTON
+========================================= */
+
+.resource-website-button {
+  display: inline-block;
+
+  background: #2149b3;
+
+  color: white !important;
+
+  text-decoration: none !important;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  margin-top: 10px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resource-website-button:hover {
+  background: #17398f;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(33, 73, 179, 0.25);
+}
+
+/* =========================================
+   BACK TO RESOURCES
+========================================= */
+
+.back-to-resources {
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.back-to-resources .resource-button {
+  margin-top: 0;
+}
+
+/* =========================================
+   BOTTOM RESOURCE SECTION
+========================================= */
 
 .resources-footer {
-  background: white;
-  padding: 100px 20px;
+  background: #173b91;
+
+  color: white;
+
   text-align: center;
+
+  padding: 85px 20px;
+}
+
+.resources-footer .container {
+  max-width: 850px;
+
+  margin: 0 auto;
 }
 
 .resources-footer h2 {
-  color: #2149b3;
-  margin-bottom: 20px;
+  color: white;
+
+  font-size: 2.4rem;
+
+  margin: 0 0 20px;
 }
 
 .resources-footer p {
-  max-width: 750px;
-  margin: auto;
-  color: #555;
+  color: rgba(255, 255, 255, 0.92);
+
   line-height: 1.8;
+
+  max-width: 720px;
+
+  margin: 0 auto 30px;
 }
 
-/* RESPONSIVE */
+.resources-footer .resource-button {
+  background: white;
+
+  color: #2149b3;
+
+  margin-top: 10px;
+}
+
+.resources-footer .resource-button:hover {
+  background: #f1f4ff;
+
+  color: #17398f;
+}
+
+/* =========================================
+   TABLET
+========================================= */
 
 @media (max-width: 1100px) {
   .resources-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .resource-card {
+    min-height: 320px;
+  }
 }
 
-@media (max-width: 768px) {
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .resources-hero {
+    padding: 70px 20px;
+  }
+
+  .resources-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .resources-hero p {
+    font-size: 1rem;
+  }
+
+  .resources-section {
+    padding: 60px 18px;
+  }
+
   .resources-grid {
     grid-template-columns: 1fr;
   }
 
-  .resources-hero h1 {
-    font-size: 2.2rem;
+  .resource-card {
+    min-height: auto;
+
+    padding: 35px 25px;
   }
-}
 
-/* ==========================
-   INDIVIDUAL RESOURCE PAGES
-========================== */
-
-.resource-detail-list {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  gap: 25px;
-}
-
-.resource-detail-card {
-  background: white;
-  padding: 35px;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  border-left: 5px solid #2149b3;
-}
-
-.resource-detail-card h2 {
-  color: #2149b3;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-}
-
-.resource-detail-card p {
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.resource-detail-card a {
-  color: #2149b3;
-  font-weight: 600;
-}
-
-.resource-website-button {
-  display: inline-block;
-  background: #2149b3;
-  color: white !important;
-  text-decoration: none;
-  padding: 11px 22px;
-  border-radius: 999px;
-  margin-top: 8px;
-  transition: 0.3s;
-}
-
-.resource-website-button:hover {
-  background: #16388d;
-}
-
-.back-to-resources {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.resource-button {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.resources-footer .resource-button {
-  margin-top: 30px;
-}
-
-@media (max-width: 768px) {
   .resource-detail-card {
     padding: 25px 20px;
   }
 
   .resource-detail-card h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+  }
+
+  .resources-footer {
+    padding: 65px 20px;
+  }
+
+  .resources-footer h2 {
+    font-size: 2rem;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+  .resources-hero h1 {
+    font-size: 2rem;
+  }
+
+  .resources-hero .section-tag {
+    font-size: 0.72rem;
+
+    letter-spacing: 1.5px;
+
+    padding: 9px 16px;
+  }
+
+  .resource-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .resource-button,
+  .resource-website-button {
+    width: 100%;
+
+    text-align: center;
   }
 }

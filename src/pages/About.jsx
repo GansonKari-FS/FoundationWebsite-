@@ -1,8 +1,9 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/layout/PageHeader";
 
-import smile from "../assets/images/antonie-smile.jpg";
-import family from "../assets/images/antonie-allKids.jpg";
+import smile from "../assets/images/antoine-smile.jpg";
+import family from "../assets/images/antoine-allKids.jpg";
 
 function About() {
   return (
@@ -12,7 +13,6 @@ function About() {
         subtitle="Learn more about the foundation and the story behind our mission."
       />
 
-      {/* Hero Section */}
       <section className="about-hero">
         <div className="container">
           <span className="section-tag">ABOUT THE FOUNDATION</span>
@@ -20,39 +20,34 @@ function About() {
           <h1>Continuing Antoine's Legacy</h1>
 
           <p>
-            The Antoine Dwayne Wattz Foundation was created to continue the
+            The Antoine Dwayne Watts Foundation was created to continue the
             legacy of a man whose life was built on faith, compassion,
             mentorship, and service to others. Through community outreach,
             family support, and advocacy, we strive to provide hope and
             opportunity for those facing difficult circumstances.
           </p>
 
-          <img
-            src={smile}
-            alt="Antoine Dwayne Wattz smiling"
-            className="hero-image"
-          />
+          <img src={smile} alt="Antoine Dwayne Watts" className="hero-image" />
         </div>
       </section>
 
-      {/* Story Section */}
       <section className="story-section">
         <div className="container story-grid">
           <div className="story-image">
             <img
               src={family}
-              alt="Antoine Dwayne Wattz with his family"
+              alt="Antoine Dwayne Watts with his family"
               className="story-photo"
             />
           </div>
 
           <div className="story-content">
-            <span className="section-tag">OUR STORY</span>
+            <span className="story-tag">OUR STORY</span>
 
             <h2>A Legacy Built on Love, Faith & Service</h2>
 
             <p>
-              Antoine Dwayne Wattz believed that every person deserved hope,
+              Antoine Dwayne Watts believed that every person deserved hope,
               encouragement, and someone willing to believe in them. His life
               reflected kindness, perseverance, and a genuine desire to help
               others overcome adversity.
@@ -67,7 +62,7 @@ function About() {
             </p>
 
             <p>
-              The Antoine Dwayne Wattz Foundation exists to honor that legacy by
+              The Antoine Dwayne Watts Foundation exists to honor that legacy by
               connecting individuals and families with vital resources,
               educational opportunities, community programs, and support
               services throughout Louisiana.
@@ -83,20 +78,68 @@ function About() {
         </div>
       </section>
 
-      {/* Purpose Section */}
-      <section className="mission-section">
+      <section className="commitment-section">
         <div className="container">
-          <span className="section-tag">OUR PURPOSE</span>
+          <div className="commitment-heading">
+            <span className="section-tag">OUR COMMITMENT</span>
 
-          <h2>Serving Louisiana Families</h2>
+            <h2>Supporting Louisiana Families</h2>
 
-          <p>
-            Our foundation works to connect individuals with housing assistance,
-            food resources, healthcare, education, employment opportunities,
-            mental health services, family support, and community programs. By
-            building partnerships with local organizations, we aim to strengthen
-            communities while preserving Antoine's legacy of service.
-          </p>
+            <p>
+              Antoine's legacy continues through meaningful service. Our
+              foundation is committed to helping individuals and families find
+              resources, encouragement, opportunity, and a stronger connection
+              to their community.
+            </p>
+          </div>
+
+          <div className="commitment-grid">
+            <div className="commitment-card">
+              <div className="commitment-icon">♥</div>
+              <h3>Resources & Assistance</h3>
+              <p>
+                Connecting individuals and families with essential resources
+                during difficult times.
+              </p>
+            </div>
+
+            <div className="commitment-card">
+              <div className="commitment-icon">★</div>
+              <h3>Education & Opportunity</h3>
+              <p>
+                Encouraging educational growth, personal development, and
+                opportunities for a brighter future.
+              </p>
+            </div>
+
+            <div className="commitment-card">
+              <div className="commitment-icon">◆</div>
+              <h3>Family Support</h3>
+              <p>
+                Strengthening families through compassion, encouragement,
+                guidance, and community support.
+              </p>
+            </div>
+
+            <div className="commitment-card">
+              <div className="commitment-icon">●</div>
+              <h3>Community Connection</h3>
+              <p>
+                Building relationships with organizations and people who share
+                our commitment to serving Louisiana communities.
+              </p>
+            </div>
+          </div>
+
+          <div className="commitment-actions">
+            <Link to="/assistance" className="about-light-button">
+              Request Assistance
+            </Link>
+
+            <Link to="/resources" className="about-outline-button">
+              Explore Resources
+            </Link>
+          </div>
         </div>
       </section>
     </main>

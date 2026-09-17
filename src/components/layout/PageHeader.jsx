@@ -6,7 +6,7 @@ function PageHeader({ title, subtitle }) {
       <div className="page-header-overlay"></div>
 
       <div className="container page-header-content">
-        <span className="page-header-tag">ANTONIE DWAYNE WATTZ FOUNDATION</span>
+        <span className="page-header-tag">ANTOINE DWAYNE WATTS FOUNDATION</span>
 
         <h1>{title}</h1>
 
