@@ -2,7 +2,7 @@ import "./About.css";
 import { Link } from "react-router-dom";
 import PageHeader from "../components/layout/PageHeader";
 
-import smile from "../assets/images/antoine-smile.jpg";
+import smile from "../assets/images/antonie-smile.jpg";
 import family from "../assets/images/antonie-allKids.jpg";
 
 function About() {
