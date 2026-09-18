@@ -12,7 +12,7 @@ function Mission() {
           <h1>Serving With Faith, Hope & Love</h1>
 
           <p>
-            The Antonie Dwayne Wattz Foundation exists to uplift individuals and
+            The Antonie Dwayne Watts Foundation exists to uplift individuals and
             families through compassion, mentorship, community outreach, and
             unwavering faith.
           </p>
@@ -24,7 +24,7 @@ function Mission() {
         <div className="container mission-grid">
           <img
             src={missionPhoto}
-            alt="Antonie Dwayne Wattz"
+            alt="Antonie Dwayne Watts"
             className="mission-photo"
           />
 
